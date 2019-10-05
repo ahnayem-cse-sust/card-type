@@ -3,7 +3,6 @@ card = function () {
     return {
         init: function () {
             $('#cardNumber').keypress(function (EventKeypress) {
-                console.log('ff');
                 if ((EventKeypress.which < 48 || EventKeypress.which > 57)) {
                     EventKeypress.preventDefault();
                 } else {
