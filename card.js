@@ -1,8 +1,9 @@
 
-Lib.card = function () {
+card = function () {
     return {
         init: function () {
             $('#cardNumber').keypress(function (EventKeypress) {
+                console.log('ff');
                 if ((EventKeypress.which < 48 || EventKeypress.which > 57)) {
                     EventKeypress.preventDefault();
                 } else {
@@ -26,7 +27,7 @@ Lib.card = function () {
  * Window onLoad function call by calling layout init function call
  */
 $(function () {
-    INSTA.Lib.card.init();
+    card.init();
 });
 
 function CardJs() {

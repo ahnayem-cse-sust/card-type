@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Card js -->
+    <script src="card.js"></script>
+</head>
+
+<body>
+    <form action="" class="form-horizontal">
+        <div class="col-sm-12 card-js">
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <div class="right margin-top-10 card-number-wrapper">
+                    <i id="cardIcon" class="card-type-icon"></i>
+                    <input type="text" name="card_number" class="form-control cc-number" id="cardNumber"
+                        placeholder="0000 0000 0000 0000" data-stripe='number' size=16 required>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label for="exp">Exp Month</label>
+                <div class="margin-top-10">
+                    <input type="text" name="exp_month" class="form-control cc-mm inline" placeholder="mm"
+                        data-stripe='exp_month' size=2>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label for="exp">Exp Year</label>
+                <div class="margin-top-10">
+                    <input type="text" name="exp_year" class="form-control cc-yy inline" placeholder="yyyy"
+                        data-stripe='exp_year' autocomplete="off" size=4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label for="cvc">CVV</label>
+                <div class="margin-top-10">
+                    <input type="text" name="cvc" class="form-control cc-cvc" placeholder="000" size=4>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label for="billingZip">Billing Zip</label>
+                <div class="margin-top-10">
+                    <input type="text" name="address_zip" class="form-control cc-zip mza" placeholder="00000"
+                        data-stripe='address_zip' size=5>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
